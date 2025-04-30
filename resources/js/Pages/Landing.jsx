@@ -1,6 +1,6 @@
 // resources/js/Pages/Landing.jsx
 
-// import Layout from '@/Layouts/Layout';
+import Layout from '@/Layouts/Layout';
 import Particles from '../Components/Particles';
 import CircularGallery from '@/Components/CircullarGallery';
 import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from 'react-icons/fa';
