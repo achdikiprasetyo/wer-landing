@@ -8,13 +8,27 @@ import Magnet from '@/Components/Magnet';
 import Orb from '../Components/Orb';
 import RotatingText from '@/Components/RotatingText';
 import Stepper, { Step } from '@/Components/Stepper';
-
+import InfiniteMenu from '@/Components/InfinityMenu';
 
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => setIsOpen(!isOpen);
+    const items = [
+        {
+          image: 'https://picsum.photos/300/300?grayscale',
+          link: '#',
+          title: 'Rina, Owner Online Shop',
+          description: '"Tim WeDev sangat profesional! Website saya selesai tepat waktu dan tampilannya keren banget!"',
+        },
+        {
+          image: 'https://picsum.photos/400/400?grayscale',
+          link: '#',
+          title: 'Budi, Konsultan Bisnis',
+          description: '"Puas banget! Mereka bantu dari nol sampai website saya live. Recommended banget!"',
+        }
+      ];
 
     return (
         <nav className="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-70 backdrop-blur-md shadow">
